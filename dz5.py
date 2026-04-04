@@ -2,9 +2,9 @@ result = []
 
 def divider(a, b):
     if a < b:
-        raise ValueError("a меньше b")
+        raise ValueError("a меньше за b")
     if b > 100:
-        raise IndexError("b слишком большое")
+        raise IndexError("b завелике")
     return a / b
 
 data = {10: 2, 2: 5, "123": 4, 18: 0, 8: 4}
@@ -14,6 +14,6 @@ for key in data:
         res = divider(key, data[key])
         result.append(res)
     except Exception as e:
-        print(f"Ошибка для {key}: {e}")
+        print(f"Помилка для {key}: {e}")
 
 print(result)
